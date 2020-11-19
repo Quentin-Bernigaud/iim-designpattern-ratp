@@ -1,0 +1,89 @@
+@import 'reset.css';
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+}
+
+img {
+    height: 50px;
+    margin-left: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4bc0ad;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+li {
+    font-style: italic;
+    padding: 10px;
+    margin: 5px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    max-width: 500px;
+    text-align: justify;
+
+}
+
+.filters,
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+select {
+    margin: 10px;
+    background: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    border: solid 1px #999999;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.badge {
+    margin-left: 20px;
+    color: #ffe273;
+    background: #272727;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: #004fa3;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

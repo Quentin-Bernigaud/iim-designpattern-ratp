@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATP Dashboard - Quentin Bernigaud</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload="ratp.displaySelectMetro()">
+    <nav>
+        <img src="https://www.ratp.fr/sites/default/files/logos/logo_ratp_8.svg" alt="logo">
+        <h1>Dashboard RATP</h1>
+        <h3 class="time"></h3>
+    </nav>
+
+    <div class="filters">
+        <label for="metros">Ligne</label>
+        <select name="metros" id="metros" onchange="ratp.changeMetro(this.value)"></select>
+        <label for="stations">Station</label>
+        <select name="stations" id="stations" onchange="ratp.changeStation(this.value)"></select>
+        <label for="destinations">Direction</label>
+        <select name="destinations" id="destinations" onchange="ratp.changeDestination(this.value)"></select>
+    </div>
+    <div class="content">
+        <div id="traffic"></div>
+        <div id="schedules"></div>
+    </div>
+
+    <footer>IIM Design Pattern 2020 - Quentin Bernigaud</footer>
+</body>
+
+</html>
