@@ -1,4 +1,11 @@
 # Exercice sur le Revealing Module Pattern
+## Sommaire
+1. [Live demo](#live-demo)
+2. [Consignes de l'exercice](#consignes-de-lexercice)
+3. [Bonus supplémentaires](#bonus-supplémentaires)
+
+## Live demo
+https://quentin-bernigaud.github.io/iim-designpattern-ratp/
 ## Consignes de l'exercice
 Le but de cet exercice est de créer une interface HTML pour lister les lignes de métros via l’API&nbsp;:<br>https://api-ratp.pierre-grimaud.fr/v4/
 ### Étape 1
@@ -31,8 +38,10 @@ Afficher la donnée de trafic sur la page, dans une div
 ### Étape Bonus #5
 Ajouter une étape entre la sélection de la ligne et de la station, demandant la destination<br>https://api-ratp.pierre-grimaud.fr/v4/destinations/metros/6
 ## Bonus supplémentaires
+- Ajout d'une démo live
 - Ajout d'une mise en page `CSS`
 - Affichage de l'`heure d'état`
+- `Sélection automatique` du premier élément de chaque `select box`
 - Transfortmation des textes des messages 
   - `Destination unavailable` devient `Destination indisponible`
   - `mn` devient `min`
@@ -40,4 +49,3 @@ Ajouter une étape entre la sélection de la ligne et de la station, demandant l
   - `Train a l'approche` devient `À l'approche`
   - `Train retarde` devient `En retard`
   - `Schedules unavailable` devient `Horaire indisponible`
-- `Sélection automatique` du premier élément de chaque `select box`
